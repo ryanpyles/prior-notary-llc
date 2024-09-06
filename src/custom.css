@@ -1,0 +1,71 @@
+/* Custom Overlay for Hero Section */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+/* Adjustments for Better Readability */
+.section-title {
+    font-family: 'Prata', serif;
+    color: #1a73e8; /* Primary color */
+}
+
+/* Ensuring Consistent Padding and Margins */
+.section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* Background color for service cards */
+.service-card {
+    background-color: #f9fafb; /* Lightened neutral color for better contrast */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Custom shadow */
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.service-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* On hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* For text on dark backgrounds */
+.text-on-dark {
+    color: #f8fafc; /* Lighter color */
+}
+
+/* Service Card Image Styles */
+.service-card img {
+    border-radius: 0.5rem; /* Rounded corners for images */
+}
+
+/* Improved text contrast */
+.text-gray-800 {
+    color: #333; /* Ensure the text is dark enough for readability */
+}
+
+/* Sticky Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+header.scrolled {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0; /* Shrink padding when scrolling */
+}
+
+/* Button Hover Effect */
+button, .btn {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #f97316; /* Secondary color for hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
